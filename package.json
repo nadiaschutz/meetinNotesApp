@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,8 @@
     "express": "^4.17.1",
     "mongoose": "^5.5.13",
     "path": "^0.12.7",
-    "swig": "^1.4.2"
-  }
+    "swig": "^1.4.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
